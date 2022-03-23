@@ -3,15 +3,24 @@
     font-weight: bold;
     text-transform: uppercase;
     opacity: 1;
-    padding: 20px 35px;
     border: 1px solid #EEEEEE;
     text-decoration none;
     letter-spacing: 3.92px;
 
+.disabled
+    color: #D5D5D5;
+
+.large
+  padding: 20px 35px;
+
+
 .author img 
     border-radius: 50%;
 
-.image 
-    max-width: 100%;
-    height: auto;
+.featured img, .image img
+    width: 100vw;
 
+.pagination
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
