@@ -1,26 +1,35 @@
+$disabled = #D5D5D5;
+$dark = #3C3B3B;
+$bg = #F4F4F4;
+$lightgray = #E1E1E1;
+$lightgray2 = #EEEEEE;
+$gray = #AAAAAA;
+$darkgray = #808080;
+$darkgray2 = #8E8E8E;
+$white = #ffffff;
 
 #wrapper
-    background: #F4F4F4;
+    background: $bg;
 
 .button
-    color: #3C3B3B;
+    color: $dark;
     font-size: 14px;
     font-weight: bold;
     text-transform: uppercase;
     opacity: 1;
-    border: 1px solid #EEEEEE;
+    border: 1px solid $lightgray2;
     text-decoration none;
     letter-spacing: 3.92px;
     padding: 20px 35px;
 
 .disabled
-    color: #D5D5D5;
+    color: $disabled;
 
 .large
   padding: 20px 35px;
 
 .next, .previous
-    border: 1px solid #E1E1E1;
+    border: 1px solid $lightgray;
 
 .author img 
     border-radius: 50%;
