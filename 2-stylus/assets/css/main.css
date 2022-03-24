@@ -1,18 +1,27 @@
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700");
+#wrapper {
+  background: #f4f4f4;
+}
 .button {
   color: #3c3b3b;
+  font-size: 14px;
   font-weight: bold;
   text-transform: uppercase;
   opacity: 1;
   border: 1px solid #eee;
   text-decoration: none;
   letter-spacing: 3.92px;
+  padding: 20px 35px;
 }
 .disabled {
   color: #d5d5d5;
 }
 .large {
   padding: 20px 35px;
+}
+.next,
+.previous {
+  border: 1px solid #e1e1e1;
 }
 .author img {
   border-radius: 50%;
@@ -34,11 +43,19 @@
 html {
   font-family: Source Sans Pro;
 }
-#wrapper {
-  background: #f4f4f4;
-}
 #header {
   background: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #eee;
+  border-radius: 0px 0px 1px 0px;
+}
+#header>.links {
+  display: none;
+}
+#header a {
+  text-decoration: none;
 }
 @media (min-width: 400px) {
   #header {
@@ -48,16 +65,23 @@ html {
 .links_item a {
   text-decoration: none;
 }
-.main_title {
+.main_title a {
+  font-size: 14px;
   font-weight: bold;
   text-transform: uppercase;
-  padding: 4px;
-  text-decoration: none;
+  padding-left: 20px;
+  letter-spacing: 2.8px;
+  color: #3c3b3b;
+}
+.main> div> .menu> a {
+  padding: 20px 25px;
+  color: #aaa;
+  border: 1px solid #eee;
 }
 .post {
   background-color: #fff;
   text-align: center;
-  margin: 50px 0;
+  margin: 40px 0;
 }
 .post .header {
   padding: 73px 0 51px 0;
@@ -94,12 +118,18 @@ html {
 .meta>.published {
   font-weight: bold;
   letter-spacing: 1.68px;
+  color: #3c3b3b;
 }
 .meta>.author {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   padding-top: 15px;
+}
+.meta>.author>.name {
+  font-size: 12px;
+  color: #8e8e8e;
+  letter-spacing: 1.68px;
 }
 .post>.paragraph {
   font-size: 16px;
@@ -118,7 +148,7 @@ html {
 .mini-post {
   display: flex;
   flex-wrap: wrap-reverse;
-  margin: 30px 0;
+  margin: 30px 0 0;
   text-transform: uppercase;
 }
 .mini-post>.header {
@@ -126,7 +156,7 @@ html {
   display: flex;
   flex-direction: column;
   position: relative;
-  padding: 30px 30px 20px;
+  padding: 30px 30px 25px;
   width: 100vw;
 }
 .mini-post>.header>.tertiary_title a {
@@ -181,4 +211,20 @@ html {
   letter-spacing: 1.44px;
   color: #808080;
   padding-top: 10px;
+}
+.blurb {
+  padding: 30px 20px 70px 20px;
+}
+.blurb>.secondary_title {
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 3.84px;
+  color: #3c3b3b;
+  text-transform: uppercase;
+}
+.blurb>.paragraph {
+  margin: 30px 0 85px;
+  letter-spacing: 0px;
+  line-height: 1.8;
+  color: #808080;
 }
