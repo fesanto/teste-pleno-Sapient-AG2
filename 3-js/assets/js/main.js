@@ -1,0 +1,1 @@
+(()=>{"use strict";!function(){const e=document.querySelector("#menu-button"),t=document.querySelector("#menu");e.addEventListener("click",(function(){t.classList.toggle("-active")}))}(),function(){const e=document.querySelector(".video"),t=document.querySelector("#video-cover");e.addEventListener("click",(function(){t.classList.add("-inactive")}))}()})();
